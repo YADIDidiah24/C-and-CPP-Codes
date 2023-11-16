@@ -8,20 +8,6 @@
 #include <string.h>
 
 
-typedef struct {
-    char course_name[40];
-    char course_id[6];
-    int course_credit;
-    char course_mark[2];
-} courses_t;
-
-typedef struct {
-    int id;
-    char name[40];
-    float GPA;
-    int NumberOfCourse;
-    courses_t* courses;
-} student_t;
 
 extern void add_new_student();
 extern void addCourse(int Std_id);
